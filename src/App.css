@@ -1,0 +1,51 @@
+.App{
+    background-color: #F9ECF2 ;
+  }
+  h4:hover{
+    color:red
+  }
+  header{
+    background-color: rgb(235, 235, 121);
+    height:130px;
+    margin-top: 0px;
+    
+  }
+  .toHover:hover{
+    color:black;
+  }
+  .toHover{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  
+  
+  .movie:hover{
+    -webkit-box-shadow: -1px -1px 63px 11px rgba(0,0,0,0.54);
+  -moz-box-shadow: -1px -1px 63px 11px rgba(0,0,0,0.54);
+  box-shadow: -1px -1px 63px 11px rgba(0,0,0,0.54);
+    border-radius: 10px;
+    background-color:#A7C7F7;
+  }
+  .search_bar{
+    background-color:#3CB6A8
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
