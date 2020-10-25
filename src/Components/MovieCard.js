@@ -2,10 +2,12 @@ import React from 'react'
 import { Card } from 'react-bootstrap';
 import '../App.css';
 import StarRating from './StarRating';
+import { Link } from 'react-router-dom';
 
 
 export default function MovieCard({Movie}) {
     return (
+        <Link to={`/movies/${Movie.title}`} style={{color: 'inherit', textDecoration: 'inherit'}}>
         <div className="movie" >
 <Card style={{margin:"20px",width:"270px",height:"400px"}}>
     <Card.Img style={{height:"200px"}} variant="top" src={Movie.Src} alt='' />
@@ -22,5 +24,6 @@ export default function MovieCard({Movie}) {
             
             
         </div>
+      </Link>  
     )
 }

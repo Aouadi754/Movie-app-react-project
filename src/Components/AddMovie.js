@@ -10,7 +10,11 @@ function AddMovie({add}) {
     const [description, setDescription] = useState("");
     const [posterurl, setPosterurl] = useState("");
     const [rate, setRate] = useState("");
+    const [trailerurl, setTrailerurl] = useState("")
 
+  const initialise_inputs = () => {
+    setTitle('') ;setDescription('');setPosterurl('');setRate('');setTrailerurl('');
+  };
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   useEffect(() => {
@@ -37,14 +41,16 @@ function AddMovie({add}) {
   <label for="fname"><h5>Poster url:</h5></label>
   <input type="text" id="fname" name="fname"className="form-control" placeholder="Movie poster url.." onChange={(e)=>setPosterurl(e.target.value)} ></input><br/>
   <label for="fname"><h5>Rate (from 0 to 5):</h5></label>
-  <input type="text" id="fname" name="fname" className="form-control" placeholder="Movie rate.." onChange={(e)=>setRate(e.target.value)}></input>
+  <input type="text" id="fname" name="fname" className="form-control" placeholder="Movie rate.." onChange={(e)=>setRate(e.target.value)}></input><br/>
+  <label for="fname"><h5>Trailer url:</h5></label>
+  <input type="text" id="fname" name="fname" className="form-control" placeholder="Movie trailer url.." onChange={(e)=>setTrailerurl(e.target.value)}></input>
   </div>
         
         
         </Modal.Body>
         <Modal.Footer>
          
-          <Button variant="primary" style={{marginRight:'180px',width:'100px'}} onClick={()=>add({title:title,description:description,Src:posterurl,rate:rate})}>
+          <Button variant="primary" style={{marginRight:'180px',width:'100px'}} onClick={()=>{add({title:title,description:description,Src:posterurl,rate:rate,trailer_url:trailerurl});initialise_inputs()}}>
             Add
           </Button>
           

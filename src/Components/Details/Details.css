@@ -1,0 +1,47 @@
+.movie_details{
+    display:flex;
+    margin-top: 7px;
+    margin-bottom: 55px;
+    margin-left: 70px;
+    width: 90%;
+    
+    padding: 40px;
+    padding-right: 0px;
+    border-radius: 15px;
+    background-color: #c1d0f0;
+}
+.movie_details img{
+    height: 300px;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: red;
+}
+.movie_details p{
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+.movie_details h1{
+    color:gray;
+}
+.trailer{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: red;
+}
+.back_home{
+    margin-left:85%;
+    margin-top:30px;
+    font-weight: bold;
+    font-size: large;
+    
+}
+.back_home:hover{
+ color: green;
+    
+}
+.movie_details:hover{
+   background-color: #DAF6CC;
+}
