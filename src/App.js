@@ -8,6 +8,8 @@ import Filter from './Components/Filter';
 import {Route} from 'react-router-dom'
 import Details from './Components/Details/Details';
 import {Movies_Data} from './Movies_Data';
+import Switch from 'react-bootstrap/esm/Switch';
+
 
 
 function App() {
@@ -34,8 +36,8 @@ function App() {
     <div className="App"> 
     
     <Header/> 
-    
-    <Route exact path={`/movies`}
+    <Switch style={{padding:'0px'}}>
+    <Route exact  path={`/`}
             render={ () => <main >
               <Filter updateRating={onRatingChange} filterRating={rating} updatesearchValue={searchFunction}/>
                <AddMovie add={add}/>
@@ -43,7 +45,7 @@ function App() {
                </main> }/>
     <Route path={`/movies/:moviename`}
             render={ (props) => <Details films={films} {...props} />}/>
-    
+    </Switch>
     </div>
   );
 }

@@ -9,7 +9,7 @@ function Details({match,films}) {
     const selected_movie = films.find(element => element.title===match.params.moviename);
     return (
         <div>
-            <Link to='/movies' style={{color: 'inherit', textDecoration: 'inherit'}}><p className='back_home'> Back to Home</p></Link>
+            <Link to='/' style={{color: 'inherit', textDecoration: 'inherit'}}><p className='back_home'> Back to Home</p></Link>
             <div className='movie_details'>
             <img   src={selected_movie.Src} alt='' />
             <div>
